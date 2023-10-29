@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="nought">◯</string>
+    <string name="cross">⨉</string>
+
+    <string name="quick_tip_title">Did you know?</string>
+    <string name="quick_tip_delete_message">You can press on a match for a while to delete it!</string>
+    <string name="quick_tip_replay_message">You can click on a match to keep playing the same game!</string>
+    <string name="ans_yes">Yes!</string>
+    <string name="ans_no">No!</string>
+    <string name="ans_ok">Okay!</string>
+    <string name="ans_cool">Cool!</string>
+
+    <string name="start_game_person">vs Player</string>
+    <string name="start_game_bot">vs Bot</string>
+    <string name="game_history">Game History</string>
+
+    <string name="lbl_name">Player Name:</string>
+    <string name="lbl_name_p1">Player 1 Name:</string>
+    <string name="lbl_name_p2">Player 2 Name:</string>
+
+    <string name="lbl_new_game">New Game!</string>
+    <string name="dialog_start">Start</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="p1">Player 1</string>
+    <string name="p2">Player 2</string>
+    <string name="robot_name">Robot</string>
+    <string name="turn">Turn</string>
+
+    <string name="nought_win">Noughts Win!</string>
+    <string name="cross_win">Cross Win!</string>
+    <string name="draw">Draw</string>
+    <string name="reset">Reset</string>
+    <string name="leave">Leave</string>
+
+    <string name="ask_delete_match">Do you really want to delete this match?</string>
+
+</resources>

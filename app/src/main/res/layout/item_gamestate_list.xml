@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/id"
+
+                style="@style/lbl_item_style"
+                android:layout_marginLeft="0dp"
+
+                android:layout_marginRight="15dp"
+
+                android:layout_centerVertical="true"
+
+
+                android:visibility="gone"
+
+                android:text="1"
+                />
+
+            <LinearLayout
+                android:id="@+id/layoutp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@id/draw_score"
+                >
+                <TextView
+                    android:id="@+id/p1"
+                    style="@style/lbl_item_style"
+
+                    android:layout_width="150dp"
+
+                    android:layout_weight="1"
+
+                    android:textColor="@color/blue"
+
+                    android:text="Player 1" />
+
+                <TextView
+                    android:id="@+id/p1_score"
+                    style="@style/lbl_item_style"
+
+                    android:text="7"
+                    android:textSize="25sp"
+
+                    android:layout_width="match_parent"
+
+
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/draw_score"
+                style="@style/lbl_item_style"
+
+
+                android:layout_centerInParent="true"
+
+                android:layout_marginHorizontal="15dp"
+
+
+                android:text="0"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/draw_score"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/p2"
+                    style="@style/lbl_item_style"
+
+                    android:text="Player 2"
+                    android:layout_width="150dp"
+
+                    android:layout_weight="1"
+
+
+                    android:textColor="@color/lightred"
+
+                    android:layout_toRightOf="@id/draw_score"
+
+
+                    android:layout_alignParentTop="true"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/p2_score"
+                    style="@style/lbl_item_style"
+
+                    android:text="7"
+                    android:textSize="25sp"
+                    android:gravity="center"
+
+
+                    android:layout_width="match_parent"
+
+
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</RelativeLayout>

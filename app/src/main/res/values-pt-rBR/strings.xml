@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="nought">◯</string>
+    <string name="cross">⨉</string>
+    <string name="quick_tip_title">Você sabia?</string>
+    <string name="quick_tip_delete_message">Você pode pressionar uma partida por um tempinho para a deletar!</string>
+    <string name="quick_tip_replay_message">Você pode clicar em uma partida para continuar o mesmo jogo!</string>
+    <string name="ans_yes">Sim!</string>
+    <string name="ans_no">Não!</string>
+    <string name="ans_ok">Okay!</string>
+    <string name="ans_cool">Legal!</string>
+    <string name="start_game_person">vs Jogador</string>
+    <string name="start_game_bot">vs Robô</string>
+    <string name="game_history">Histórico de Partidas</string>
+    <string name="lbl_name">Nome do jogador:</string>
+    <string name="lbl_name_p1">Nome do jogador 1:</string>
+    <string name="lbl_name_p2">Nome do jogador 2:</string>
+    <string name="lbl_new_game">Novo Jogo!</string>
+    <string name="dialog_start">Iniciar</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="p1">Player 1</string>
+    <string name="p2">Player 2</string>
+    <string name="robot_name">Robô</string>
+    <string name="turn">Turno</string>
+    <string name="nought_win">Azul Venceu!</string>
+    <string name="cross_win">Vermelho Venceu!</string>
+    <string name="draw">Velha</string>
+    <string name="reset">Reiniciar</string>
+    <string name="leave">Sair</string>
+    <string name="ask_delete_match">Você realmente quer deletar esta partida?</string>
+</resources>

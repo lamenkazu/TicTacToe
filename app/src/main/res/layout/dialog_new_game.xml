@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:id="@+id/lbl_p1_name"
+        style="@style/dialog_label_style"
+        android:text="@string/lbl_name_p1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPlayer1"
+
+            style="@style/dialog_edit_text_style"
+            android:text="@string/p1"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/lbl_p2_name"
+        style="@style/dialog_label_style"
+
+        android:text="@string/lbl_name_p2"
+
+        android:layout_marginTop="20dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPlayer2"
+
+            style="@style/dialog_edit_text_style"
+            android:text="@string/p2"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

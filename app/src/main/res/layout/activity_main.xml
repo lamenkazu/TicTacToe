@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:padding="20dp"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+           <RelativeLayout
+               android:id="@+id/header_layout"
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+               <!--    Header   -->
+
+               <TextView
+                   android:id="@+id/lbl_p1"
+
+                   style="@style/label_style"
+                   android:layout_width="150dp"
+
+                   android:textSize="30sp"
+
+                   android:padding="10dp"
+
+
+                   android:background="@drawable/border_background_p1"/> <!-- Use o shape de borda personalizado como fundo -->
+
+
+               <TextView
+                   android:id="@+id/lbl_draw"
+
+                   style="@style/label_style"
+
+                   android:layout_toRightOf="@id/lbl_p1"
+                   android:layout_toLeftOf="@id/lbl_p2"
+
+                   android:text="@string/draw"
+                   android:textSize="18sp"
+
+                   />
+
+               <TextView
+                   android:id="@+id/draw_score"
+                   style="@style/label_style"
+
+                   android:textSize="24sp"
+
+                   android:text="0"
+
+                   android:layout_below="@id/lbl_draw"
+                   android:layout_toRightOf="@id/lbl_p1"
+                   android:layout_toLeftOf="@id/lbl_p2"
+                   />
+
+               <TextView
+                   android:id="@+id/lbl_p2"
+                   style="@style/label_style"
+
+                   android:textSize="30sp"
+                   android:layout_width="150dp"
+
+                   android:padding="10dp"
+
+                   android:background="@drawable/border_background_p2"
+
+               android:layout_alignParentEnd="true"
+                   />
+
+               <TextView
+                   android:id="@+id/p1_score"
+                   style="@style/label_style"
+
+                   android:textSize="28sp"
+
+                   android:text="0"
+
+                   android:layout_below="@id/lbl_p1"
+                   android:layout_toLeftOf="@id/lbl_draw"
+                   android:layout_alignStart="@id/lbl_p1"
+                   />
+
+
+               <TextView
+                   android:id="@+id/p2_score"
+                   style="@style/label_style"
+
+                   android:textSize="28sp"
+
+                   android:text="0"
+
+                   android:layout_below="@id/lbl_p2"
+                   android:layout_alignStart="@id/lbl_p2"
+                   android:layout_alignEnd="@id/lbl_p2"
+                   />
+           </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/lbl_turn"
+                style="@style/label_style"
+
+
+                android:layout_below="@id/header_layout"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="20dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/turn"
+                android:textSize="40sp"
+
+                android:visibility="invisible"
+
+                />
+
+
+
+            <!--    Tabuleiro   -->
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/main_board_container"
+                android:name="com.daedrii.tictactoe.view.BoardFragment"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/lbl_turn"
+
+
+                android:layout_centerVertical="true"
+                tools:layout="@layout/fragment_board" />
+
+            <Button
+                android:id="@+id/btn_reset_game"
+                style="@style/button_style"
+
+                android:layout_alignParentEnd="true"
+
+                android:text="@string/reset"
+
+                android:visibility="gone"
+
+                />
+
+            <Button
+                android:id="@+id/btn_leave_game"
+                style="@style/button_style"
+
+                android:layout_alignParentStart="true"
+
+                android:text="@string/leave"
+
+
+
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
